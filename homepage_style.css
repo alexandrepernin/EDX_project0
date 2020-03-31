@@ -87,3 +87,9 @@ th, td {
   font-weight: lighter;
   padding: 3px;
 }
+
+@media print {
+  .screen-only {
+    display:none;
+  }
+}
