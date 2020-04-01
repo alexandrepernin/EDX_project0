@@ -19,10 +19,10 @@ ul {
 
 }
 
-ul ul li {
+div ul li {
 
   list-style-type:none;
-  font-family: Arial, sans-serif;
+  font-family: Lucida, sans-serif;
   font-weight: lighter;
   font-size: 14px;
 }
