@@ -69,6 +69,13 @@ td {
   padding: 3px;
 }
 
+p {
+  text-align: left;
+  font-family: Lucida, sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
 @media print {
   .screen-only {
     display:none;
