@@ -1,79 +1,50 @@
-h1 {
-
-  color:black;
-  text-align: center;
-  font-family: Lucida, sans-serif;
-}
-
-a:visited {
-  color:black;
-}
-
+/* No particular styling for links*/
 a {
+  font-style: normal;
+  color: black;
+}
+
+/* Change color when hovered */
+a:hover {
   text-decoration: none;
-}
-
-ul {
-
-  list-style-type:none;
-
-}
-
-div ul li {
-
-  list-style-type:none;
-  font-family: Lucida, sans-serif;
-  font-weight: lighter;
-  font-size: 14px;
-}
-
-li:hover {
-
   color: grey;
-
 }
 
-p {
+#homename {
+  color: black;
+  font-family: Lucida, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+}
 
-  color:black;
-  text-align: center;
+/* No bullet for list */
+div>ul {
+  list-style-type:none;
+}
+
+/* Text style for list items */
+div ul li {
   font-family: Lucida, sans-serif;
   font-weight: lighter;
+  font-size: 14px;
 }
 
+/* Centers text within Bootstrap column */
 div {
-
-  height: 10px;
-  padding: 5px;
   text-align: center;
-  font-family: Lucida, sans-serif;
   font-size: 14px;
-  font-weight: lighter;
 }
 
-#first, #second {
-
-  height: 10px;
-  padding: 5px;
+/* Customize alert message width */
+.alert {
+  height: 56px;
   text-align: center;
-  font-family: Lucida, sans-serif;
-  font-size: 14px;
-  font-weight: lighter;
+  vertical-align: middle;
+  font-size: 18px;
 }
 
-.Nationality {
-
-  height: 10px;
-  padding: 5px;
-  text-align: center;
-  font-family: Lucida, sans-serif;
-  font-size: 14px;
-  font-weight: lighter;
-  font-style: italic;
-}
-
+/* Style for table elements */
 table {
-
   border: none;
   border-collapse: collapse;
   width: 50%;
@@ -96,7 +67,6 @@ td {
   font-size: 14px;
   font-weight: lighter;
   padding: 3px;
-  font-style: ;
 }
 
 @media print {
