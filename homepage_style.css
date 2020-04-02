@@ -46,7 +46,7 @@ div {
   height: 10px;
   padding: 5px;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: Lucida, sans-serif;
   font-size: 14px;
   font-weight: lighter;
 }
@@ -56,7 +56,7 @@ div {
   height: 10px;
   padding: 5px;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: Lucida, sans-serif;
   font-size: 14px;
   font-weight: lighter;
 }
@@ -66,7 +66,7 @@ div {
   height: 10px;
   padding: 5px;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: Lucida, sans-serif;
   font-size: 14px;
   font-weight: lighter;
   font-style: italic;
@@ -74,18 +74,29 @@ div {
 
 table {
 
-  border: 2px solid black;
+  border: none;
   border-collapse: collapse;
   width: 50%;
 }
 
-th, td {
-  text-align: center;
-  border: 2px solid black;
-  font-family: Arial, sans-serif;
+th {
+  text-align: left;
+  border: none;
+  font-family: Lucida, sans-serif;
   font-size: 14px;
   font-weight: lighter;
   padding: 3px;
+  text-decoration: underline;
+}
+
+td {
+  text-align: center;
+  border: none;
+  font-family: Lucida, sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  padding: 3px;
+  font-style: ;
 }
 
 @media print {
