@@ -1,3 +1,11 @@
+/* Automatically recompile: sass --watch styles_with_sass.scss:styles_with_sass.css  */
+/* Github Pages does it automatically  */
+p, table td, table th, div ul li, #homename {
+  color: black;
+  font-family: lighter, sans-serif;
+  font-size: 14px;
+}
+
 /* No particular styling for links*/
 a {
   font-style: normal;
@@ -11,22 +19,17 @@ a:hover {
 }
 
 #homename {
-  color: black;
-  font-family: Lucida, sans-serif;
   font-weight: normal;
-  font-size: 14px;
 }
 
 /* No bullet for list */
-div>ul {
-  list-style-type:none;
+div > ul {
+  list-style-type: none;
 }
 
 /* Text style for list items */
 div ul li {
-  font-family: Lucida, sans-serif;
   font-weight: lighter;
-  font-size: 14px;
 }
 
 /* Centers text within Bootstrap column */
@@ -43,41 +46,35 @@ div {
   font-size: 18px;
 }
 
-/* Style for table elements */
+/* Style for table elements  => with scss nesting*/
 table {
   border: none;
   border-collapse: collapse;
   width: 50%;
 }
-
-th {
+table th {
   text-align: left;
   border: none;
-  font-family: Lucida, sans-serif;
-  font-size: 14px;
   font-weight: lighter;
   padding: 3px;
   text-decoration: underline;
 }
-
-td {
+table td {
   text-align: center;
   border: none;
-  font-family: Lucida, sans-serif;
-  font-size: 14px;
   font-weight: lighter;
   padding: 3px;
 }
 
 p {
   text-align: left;
-  font-family: Lucida, sans-serif;
-  font-size: 14px;
   font-weight: lighter;
 }
 
-@media print {
-  .screen-only {
-    display:none;
+@media (max-width: 700px) {
+  .alert {
+    display: none;
   }
 }
+
+/*# sourceMappingURL=styles_with_sass.css.map */

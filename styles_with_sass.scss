@@ -1,0 +1,92 @@
+$main_font_color:black;
+$main_font_size:14px;
+$main_font_family:Lucida;
+$backup_font_family:sans-serif;
+$main_font_family:lighter;
+
+/* Automatically recompile: sass --watch styles_with_sass.scss:styles_with_sass.css  */
+/* Github Pages does it automatically  */
+
+%genfont {
+  color: $main_font_color;
+  font-family: $main_font_family, $backup_font_family;
+  font-size: $main_font_size;
+}
+
+/* No particular styling for links*/
+a {
+  font-style: normal;
+  color: $main_font_color;
+}
+
+/* Change color when hovered */
+a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+#homename {
+  @extend %genfont;
+  font-weight: normal;
+}
+
+/* No bullet for list */
+div>ul {
+  list-style-type:none;
+}
+
+/* Text style for list items */
+div ul li {
+  @extend %genfont;
+  font-weight: $main_font_family;
+}
+
+/* Centers text within Bootstrap column */
+div {
+  text-align: center;
+  font-size: $main_font_size;
+}
+
+/* Customize alert message width */
+.alert {
+  height: 56px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+/* Style for table elements  => with scss nesting*/
+table {
+  border: none;
+  border-collapse: collapse;
+  width: 50%;
+
+  th {
+    @extend %genfont;
+    text-align: left;
+    border: none;
+    font-weight: $main_font_family;
+    padding: 3px;
+    text-decoration: underline;
+  }
+
+  td {
+    @extend %genfont;
+    text-align: center;
+    border: none;
+    font-weight: $main_font_family;
+    padding: 3px;
+  }
+}
+
+p {
+  @extend %genfont;
+  text-align: left;
+  font-weight: $main_font_family;
+}
+
+@media (max-width: 700px)  {
+  .alert {
+    display:none;
+  }
+}
